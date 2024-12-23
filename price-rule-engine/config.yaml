@@ -1,8 +1,0 @@
-apiVersion: v1 
-kind: ConfigMap
-metadata:
-  name: myk8config 
-data:
-  single.property: k8 configmap single property
-  application.yml: 
-    
