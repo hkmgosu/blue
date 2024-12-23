@@ -1,0 +1,23 @@
+{
+  "login": {
+    "badCredentials": "Invalid Credentials",
+    "emailNotConfirmed": "Email is not confirmed"
+  },
+  "confirm-email": {
+    "verify": "Email confirmed successfully!"
+  },
+  "register": {
+    "welcome-to": "Welcome to"
+  },
+  "errors": {
+    "already-confirmed": "User is already confirmed",
+    "confirm-code": "URL is not valid",
+    "username-already-exists": "Username Already exists",
+    "pyme-already-exists": "Pyme Already exists"
+  },
+  "billing_information": {
+    "address": "Please write an address",
+    "pyme": "This bussiness doesn't exists",
+    "rut": "This rut is already asociated"
+  }
+}

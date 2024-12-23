@@ -1,0 +1,6 @@
+{
+  "error": {
+    "verify-code": "Codigo de verificación no existe",
+    "user-not-exist": "Usuario no existe"
+  }
+}

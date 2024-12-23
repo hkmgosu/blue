@@ -1,0 +1,6 @@
+Dockerfile
+node_modules
+test
+.eslint*
+.prettierrc
+docker-compose.yml

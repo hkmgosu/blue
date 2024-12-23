@@ -1,0 +1,39 @@
+version: "3.8"
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  superapp_backend:
+    container_name: superapp_backend
+    build:
+      context: .
+      target: builder
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    command: npm run start:dev
+    environment:
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_USERPASSWORD: ${MONGO_USERPASSWORD}
+      KEYCLOAK_URL: ${KEYCLOAK_URL}
+      KEYCLOAK_CLIENT_ID_ADMIN: ${KEYCLOAK_CLIENT_ID_ADMIN}
+      KEYCLOAK_USERNAME_ADMIN: ${KEYCLOAK_USERNAME_ADMIN}
+      KEYCLOAK_PASSWORD_ADMIN: ${KEYCLOAK_PASSWORD_ADMIN}
+      KEYCLOAK_CLIENT_ID: ${KEYCLOAK_CLIENT_ID}
+      KEYCLOAK_REALM: ${KEYCLOAK_REALM}
+      KEYCLOAK_CLIENT_SECRET: ${KEYCLOAK_CLIENT_SECRET}
+      SII_API_URL: ${SII_API_URL}
+      SII_API_USERNAME: ${SII_API_USERNAME}
+      SII_API_TOKEN: ${SII_API_TOKEN}
+      NOTIFICATION_API: ${NOTIFICATION_API}
+      EMAIL_FROM: ${EMAIL_FROM}
+    networks:
+      - superapp_network
+networks:
+  superapp_network:

@@ -1,0 +1,23 @@
+{
+  "login": {
+    "badCredentials": "Credenciales Invalidas",
+    "emailNotConfirmed": "Email no ha sido confirmado"
+  },
+  "confirm-email": {
+    "verify": "Email Confirmado con éxito!"
+  },
+  "register": {
+    "welcome-to": "Bienvenid@ a"
+  },
+  "errors": {
+    "already-confirmed": "Cuenta ya se encuentra confirmada",
+    "confirm-code": "URL no válida",
+    "username-already-exists": "Nombre de usuario ya existe",
+    "pyme-already-exists": "Pyme ya existe"
+  },
+  "billing_information": {
+    "address": "Ingresa una dirección de facturación",
+    "pyme": "Esta empresa no existe",
+    "rut": "Este RUT esta asociado a otra empresa"
+  }
+}

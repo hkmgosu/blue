@@ -1,0 +1,1177 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Super APP",
+    "description": "Super APP Services",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "securitySchemes": {
+      "bearer": { "scheme": "bearer", "bearerFormat": "JWT", "type": "http" }
+    },
+    "schemas": {
+      "LoginModel": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "password": { "type": "string" }
+        },
+        "required": ["username", "password"]
+      },
+      "LogoutModel": {
+        "type": "object",
+        "properties": { "user_id": { "type": "string" } },
+        "required": ["user_id"]
+      },
+      "CodeLoginModel": {
+        "type": "object",
+        "properties": { "code": { "type": "string" } },
+        "required": ["code"]
+      },
+      "RefreshTokenModel": {
+        "type": "object",
+        "properties": { "refresh_token": { "type": "string" } },
+        "required": ["refresh_token"]
+      },
+      "GetUserModel": {
+        "type": "object",
+        "properties": { "username": { "type": "string" } },
+        "required": ["username"]
+      },
+      "ResetPasswordModel": {
+        "type": "object",
+        "properties": { "username": { "type": "string" } },
+        "required": ["username"]
+      },
+      "ResetPasswordVerifyModel": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "nonce": { "type": "string" }
+        },
+        "required": ["username", "nonce"]
+      },
+      "VerifyChangePasswordModel": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "nonce": { "type": "string" },
+          "new_password": { "type": "string" }
+        },
+        "required": ["username", "nonce", "new_password"]
+      },
+      "RegisterModel": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "lastname": { "type": "string" },
+          "email": { "type": "string" },
+          "password": { "type": "string" },
+          "avatar": { "type": "string" },
+          "file": { "type": "string" }
+        },
+        "required": ["name", "lastname", "email", "password", "avatar", "file"]
+      },
+      "ClientUpdatedModel": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string" },
+          "operation": { "type": "string" },
+          "payload": { "type": "object" }
+        },
+        "required": ["timestamp", "operation", "payload"]
+      },
+      "UploadPhoto": { "type": "object", "properties": {} },
+      "UserEdit": {
+        "type": "object",
+        "properties": {
+          "firstName": { "type": "string" },
+          "lastName": { "type": "string" },
+          "phone": { "type": "string" }
+        },
+        "required": ["firstName", "lastName", "phone"]
+      },
+      "ChangePassword": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "new_password": { "type": "string" }
+        },
+        "required": ["username", "new_password"]
+      },
+      "EditDefaultPymeModel": {
+        "type": "object",
+        "properties": { "pyme_id": { "type": "string" } },
+        "required": ["pyme_id"]
+      },
+      "UserFirstLogin": {
+        "type": "object",
+        "properties": { "firstLogin": { "type": "boolean" } },
+        "required": ["firstLogin"]
+      },
+      "CreateClientRetryModel": {
+        "type": "object",
+        "properties": {
+          "pyme_id": { "type": "string" },
+          "operation": { "type": "string" }
+        },
+        "required": ["pyme_id", "operation"]
+      },
+      "createPopup": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "image": { "type": "string" },
+          "show": { "type": "boolean" }
+        },
+        "required": ["title", "description", "image", "show"]
+      },
+      "updateWhatsappLink": {
+        "type": "object",
+        "properties": {
+          "link": { "type": "string" }
+        },
+        "required": ["link"]
+      },
+      "RegisterPymeModel": {
+        "type": "object",
+        "properties": {
+          "social_reason": { "type": "string" },
+          "email": { "type": "string" },
+          "rut": { "type": "string" },
+          "user_id": { "type": "string" },
+          "is_natural_person": { "type": "boolean" },
+          "shipping_type": { "type": "string" },
+          "collaborator_quantity": { "type": "string" },
+          "shipping_quantity": { "type": "string" },
+          "other_type": { "type": "string" }
+        },
+        "required": [
+          "social_reason",
+          "email",
+          "rut",
+          "user_id",
+          "is_natural_person",
+          "shipping_type",
+          "collaborator_quantity",
+          "shipping_quantity",
+          "other_type"
+        ]
+      },
+      "InviteCompanyAdminModel": { "type": "object", "properties": {} },
+      "InviteCompanyModel": {
+        "type": "object",
+        "properties": {
+          "pyme_id": { "type": "string" },
+          "email": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["pyme_id", "email"]
+      },
+      "ResendInviteCompanyModel": {
+        "type": "object",
+        "properties": {
+          "invitation_id": { "type": "string" },
+          "invitationType": { "type": "string" }
+        },
+        "required": ["invitation_id", "invitationType"]
+      },
+      "AnswerInvitationPymeModel": { "type": "object", "properties": {} },
+      "JoiToPymeModel": {
+        "type": "object",
+        "properties": { "social_reason": { "type": "string" } },
+        "required": ["social_reason"]
+      },
+      "BillingInformation": { "type": "object", "properties": {} },
+      "FindPymeModel": {
+        "type": "object",
+        "properties": { "find": { "type": "string" } },
+        "required": ["find"]
+      }
+    }
+  },
+  "paths": {
+    "/api/pyme2c/backend/v1/account/login": {
+      "post": {
+        "operationId": "AccountController_login",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/LoginModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "User Login Success" },
+          "400": { "description": "Validation Error" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/logout": {
+      "post": {
+        "operationId": "AccountController_logout",
+        "summary": "Logout user",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/LogoutModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/code-login": {
+      "post": {
+        "operationId": "AccountController_codeLogin",
+        "summary": "Login with code",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CodeLoginModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/refresh-token": {
+      "post": {
+        "operationId": "AccountController_refreshToken",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/RefreshTokenModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Refresh Token" },
+          "400": { "description": "Token invalid" }
+        },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/confirm-email/{username}/{code}": {
+      "get": {
+        "operationId": "AccountController_VerifyEmail",
+        "parameters": [
+          {
+            "name": "username",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "code",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "number" }
+          }
+        ],
+        "responses": { "200": { "description": "User Info" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/confirm-email/{username}/send-code": {
+      "post": {
+        "operationId": "AccountController_SendCode",
+        "parameters": [
+          {
+            "name": "username",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/userinfo": {
+      "get": {
+        "operationId": "AccountController_getUserInfo",
+        "parameters": [],
+        "responses": {
+          "200": { "description": "User Info" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Account"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/admin/userinfo": {
+      "post": {
+        "operationId": "AccountController_getUserInfoByAdmin",
+        "summary": "Get User Info with Admin Token",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/GetUserModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/reset-password/generate-code": {
+      "post": {
+        "operationId": "AccountController_resetPassword",
+        "summary": "User Reset Password",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ResetPasswordModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/reset-password/verify-code": {
+      "post": {
+        "operationId": "AccountController_resetPasswordVerify",
+        "summary": "Verify code for Reset Password",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordVerifyModel"
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/reset-password/change-password": {
+      "post": {
+        "operationId": "AccountController_changeResetPassword",
+        "summary": "Verify Reset Password and Change Password",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyChangePasswordModel"
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/register": {
+      "post": {
+        "operationId": "AccountController_Register",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/RegisterModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/account/bruteforce/{uid}": {
+      "get": {
+        "operationId": "AccountController_getUserBruteForceInfo",
+        "summary": "Get Brute Force Info",
+        "parameters": [
+          {
+            "name": "uid",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "tags": ["Account"]
+      },
+      "delete": {
+        "operationId": "AccountController_resetUserBruteForceInfo",
+        "summary": "Reset Brute Force/Unlock User",
+        "parameters": [
+          {
+            "name": "uid",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "tags": ["Account"]
+      }
+    },
+    "/api/pyme2c/backend/v1/health/liveness": {
+      "get": {
+        "operationId": "HealthController_liveness",
+        "parameters": [],
+        "responses": { "200": { "description": "" } }
+      }
+    },
+    "/api/pyme2c/backend/v1/health/readiness": {
+      "get": {
+        "operationId": "HealthController_check",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "The Health Check is successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string", "example": "ok" },
+                    "info": {
+                      "type": "object",
+                      "example": { "database": { "status": "up" } },
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      },
+                      "nullable": true
+                    },
+                    "error": {
+                      "type": "object",
+                      "example": {},
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      },
+                      "nullable": true
+                    },
+                    "details": {
+                      "type": "object",
+                      "example": { "database": { "status": "up" } },
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "The Health Check is not successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string", "example": "error" },
+                    "info": {
+                      "type": "object",
+                      "example": { "database": { "status": "up" } },
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      },
+                      "nullable": true
+                    },
+                    "error": {
+                      "type": "object",
+                      "example": {
+                        "redis": {
+                          "status": "down",
+                          "message": "Could not connect"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      },
+                      "nullable": true
+                    },
+                    "details": {
+                      "type": "object",
+                      "example": {
+                        "database": { "status": "up" },
+                        "redis": {
+                          "status": "down",
+                          "message": "Could not connect"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": { "status": { "type": "string" } },
+                        "additionalProperties": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pyme2c/backend/v1/legacy/client-integration": {
+      "post": {
+        "operationId": "LegacyController_ClientIntegration",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ClientUpdatedModel" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } }
+      }
+    },
+    "/api/pyme2c/backend/v1/user": {
+      "get": {
+        "operationId": "UserController_getUserInfo",
+        "parameters": [],
+        "responses": {
+          "200": { "description": "User Info" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      },
+      "put": {
+        "operationId": "UserController_editUser",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/UserEdit" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Edit User" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/user/upload-photo": {
+      "put": {
+        "operationId": "UserController_uploadPhoto",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/UploadPhoto" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Upload Photo" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/user/change-password": {
+      "put": {
+        "operationId": "UserController_changePassword",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ChangePassword" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Change Password" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/user/edit-default-pyme": {
+      "post": {
+        "operationId": "UserController_editDefaultPyme",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/EditDefaultPymeModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Edit Default Pyme" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/user/first-login": {
+      "put": {
+        "operationId": "UserController_editUserFirstLogin",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/UserFirstLogin" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Edit User" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["User"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/jobs": {
+      "post": {
+        "operationId": "JobsController_createRetry",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClientRetryModel"
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "tags": ["Jobs Controller"]
+      }
+    },
+    "/jobs/retry": {
+      "post": {
+        "operationId": "JobsController_retryClients",
+        "parameters": [],
+        "responses": { "201": { "description": "" } },
+        "tags": ["Jobs Controller"]
+      }
+    },
+    "/api/pyme2c/backend/v1/popup": {
+      "get": {
+        "operationId": "PopupController_getPopup",
+        "summary": "Get Popup",
+        "parameters": [],
+        "responses": {
+          "200": { "description": "Get Popup" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Popup"],
+        "security": [{ "bearer": [] }]
+      },
+      "post": {
+        "operationId": "PopupController_createPopup",
+        "summary": "Get Popup",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/createPopup" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Create Popup" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Popup"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/popup/find-one": {
+      "get": {
+        "operationId": "PopupController_getOnePopup",
+        "summary": "Get Popup",
+        "parameters": [],
+        "responses": {
+          "200": { "description": "Get Popup" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Popup"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/popup/{id}": {
+      "put": {
+        "operationId": "PopupController_updatePopup",
+        "summary": "Update Popup",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/createPopup" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Update Popup" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Popup"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/{id}": {
+      "get": {
+        "operationId": "PymeControllerV2_getPyme",
+        "summary": "Get Pyme By Id",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Get Pyme By Id" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      },
+      "put": {
+        "operationId": "PymeControllerV2_updatePyme",
+        "summary": "Update Pyme By Id",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Updated" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/register": {
+      "post": {
+        "operationId": "PymeControllerV2_register",
+        "summary": "Register Business",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/RegisterPymeModel" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Register Business" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/admin-invite": {
+      "post": {
+        "operationId": "PymeControllerV2_inviteAdminCompany",
+        "summary": "Invite User to be Admin of the company",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InviteCompanyAdminModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Invite User to be Admin of the Company" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/invite": {
+      "post": {
+        "operationId": "PymeControllerV2_inviteToCompany",
+        "summary": "Invite User to Company",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/InviteCompanyModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Invite User to Company" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/resend-invitation": {
+      "post": {
+        "operationId": "PymeControllerV2_resendBusinessInvitation",
+        "summary": "Resend invitation to Company",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResendInviteCompanyModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Resend invitation to Company" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/invitations-by-email-and-status/{email}/{status}": {
+      "get": {
+        "operationId": "PymeControllerV2_getAllInvitationsByEmailAndStatus",
+        "summary": "Get all invitations by email and status",
+        "parameters": [
+          {
+            "name": "email",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "status",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Invitations found" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/invitations-by-pyme/{status}": {
+      "get": {
+        "operationId": "PymeControllerV2_getAllInvitationsByPymeIdEmailAndStatus",
+        "summary": "Get all invitations by pyme and status",
+        "parameters": [
+          {
+            "name": "status",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Invitations found" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/cancel-invitation/{invitationId}": {
+      "delete": {
+        "operationId": "PymeControllerV2_cancelBusinessInvitation",
+        "summary": "Cancel invitation",
+        "parameters": [
+          {
+            "name": "invitationId",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Cancel invitation" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/answer-pyme-invitation": {
+      "post": {
+        "operationId": "PymeControllerV2_answerToPymeInvitation",
+        "summary": "Answer Pyme Invitation",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnswerInvitationPymeModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Answer Pyme Invitation" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/join": {
+      "post": {
+        "operationId": "PymeControllerV2_joinToPyme",
+        "summary": "Join User to Pyme",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/JoiToPymeModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Join User to Pyme" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/{pyme_id}/{user_id}": {
+      "delete": {
+        "operationId": "PymeControllerV2_removeCollaborator",
+        "summary": "Remove collaborator from pyme",
+        "parameters": [
+          {
+            "name": "pyme_id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "user_id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/user/{pyme_id}": {
+      "delete": {
+        "operationId": "PymeControllerV2_autoRemoveUserFromPyme",
+        "summary": "Autoremove user from Pyme",
+        "parameters": [
+          {
+            "name": "pyme_id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/{id}/collaborators": {
+      "get": {
+        "operationId": "PymeControllerV2_getPymeUsers",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "status",
+            "required": true,
+            "in": "query",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/{id}/billing": {
+      "put": {
+        "operationId": "PymeControllerV2_saveBillingInformation",
+        "summary": "Save pyme billing information",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/BillingInformation" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "save pyme billing information" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      },
+      "get": {
+        "operationId": "PymeControllerV2_getPymeBillingInfo",
+        "summary": "Verify if pyme has info",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Get Pyme By Id" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/pyme/find": {
+      "post": {
+        "operationId": "PymeControllerV2_findPymes",
+        "summary": "Find",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/FindPymeModel" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Find pyme" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Pyme"],
+        "security": [{ "bearer": [] }, { "bearer": [] }]
+      }
+    },
+    "/api/pyme2c/backend/v1/settings/whatsapp-link": {
+      "get": {
+        "operationId": "SettingsWhatssapController_getLink",
+        "summary": "Get Whatsapp Link",
+        "parameters": [],
+        "responses": {
+          "200": { "description": "Get Whatsapp Link" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Settings"],
+        "security": [{ "bearer": [] }]
+      },
+      "post": {
+        "operationId": "SettingsWhatssapController_updateLink",
+        "summary": "Update Whatsapp link",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/updateWhatsappLink" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Update Whatsapp link" },
+          "401": { "description": "Unauthorized" }
+        },
+        "tags": ["Settings"],
+        "security": [{ "bearer": [] }]
+      }
+    }
+  }
+}
