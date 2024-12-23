@@ -1,0 +1,61 @@
+@import '../../styles/mixins.scss';
+.buttonContainer {
+  height: 25px;
+  width: 25px;
+  background-color: var(--bx-color-blue);
+  border-radius: 15px;
+  transition: all 0.2s;
+  right: -22px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  top: 50px;
+}
+
+.hidden {
+  top: 50px;
+}
+.LogoContainer {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+.Left {
+  transition: all 0.2s ease;
+  box-shadow: 2px 15px 10px rgb(0 0 0 / 20%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  bottom: 0px;
+  top: 12px;
+  z-index: 900;
+  border-radius: 0px 15px 15px 0px;
+  left: -90%;
+  width: 268px;
+  @media (min-width: 768px) {
+    position: relative;
+    padding: 8px;
+    width: 111px;
+    border-radius: 0;
+    left: 0;
+  }
+}
+.LeftIsOpen {
+  transition: all 0.2s ease;
+  width: 268px;
+  left: 0%;
+}
+.menuContainer {
+  height: 100%;
+  @include media(xs) {
+    height: 100vh;
+  }
+}

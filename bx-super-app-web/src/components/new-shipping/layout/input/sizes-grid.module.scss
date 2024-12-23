@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  color: var(--bx-color-grey-one);
+}
+
+.box {
+  padding: 0 8px;
+  flex: 0 0 auto;
+  width: 50%;
+  margin-bottom: 30px;
+  @media (min-width: 1200px) {
+    flex: 0 0 auto;
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
+
+.maxWeight {
+  margin-top: 25px;
+  font-size: 10px;
+  @media (min-width: 1200px) {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+
+.row {
+  width: 100%;
+}
+.rowGrid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.sizeBox {
+  width: 23%;
+}

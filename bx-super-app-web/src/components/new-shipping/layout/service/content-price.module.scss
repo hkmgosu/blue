@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.contentText {
+  margin-left: 16px;
+  margin-right: 30px;
+  font-size: 12px;
+}
+.contentWarrantyText {
+  margin-right: 30px;
+  font-size: 12px;
+  display: flex;
+}
+.warrantyText {
+  margin-left: 0;
+}
+.contentValue {
+  font-size: 12px;
+}
+.footer {
+  display: flex;
+}
+.footerText {
+  width: 100%;
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconContainer {
+  display: flex;
+}

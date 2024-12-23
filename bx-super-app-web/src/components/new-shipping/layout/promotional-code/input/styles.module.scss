@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  width: 100%;
+}
+.boxLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+  margin-right: 24px;
+}
+.boxRight {
+  display: flex;
+  flex: 30%;
+  justify-content: flex-end;
+}
+
+.discountCode {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 10px;
+}
+.error {
+  color: var(--bx-color-red-alert);
+}
+.success {
+  color: var(--bx-fv-valid);
+}

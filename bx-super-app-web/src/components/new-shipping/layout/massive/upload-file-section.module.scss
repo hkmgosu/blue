@@ -1,0 +1,235 @@
+.specialCard {
+  text-align: left;
+  display: grid;
+  grid-gap: 24px;
+  padding: 24px 23px;
+}
+
+.specialCardRight {
+  text-align: center;
+  max-width: 380px;
+  margin: -48px 0px 0px auto;
+}
+
+.title {
+  font-family: var(--bx-font-primary);
+  color: var(--bx-color-black);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0px 23px;
+}
+
+.contentTitleSection {
+  padding: 16px 40px 27px 40px;
+}
+
+.headerSection {
+  display: grid;
+  gap: 8px;
+}
+
+.titleSection {
+  font-family: var(--bx-font-primary);
+  color: var(--bx-color-black);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  width: 100%;
+}
+
+.titleRight,
+.subtitleSection {
+  font-family: var(--bx-font-secondary);
+  color: var(--bx-color-black);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 145%;
+  letter-spacing: 0.03em;
+  width: 100%;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.contentDangerousGoods {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.checkbox,
+.contentIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dangerousGoodsText {
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueUnderline {
+  font-weight: bold;
+  color: var(--bx-color-lblue);
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.bottomText {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--bx-color-black);
+}
+
+.uploadButtonText {
+  margin-left: 10px;
+}
+
+.titleRight {
+  letter-spacing: 0.03em;
+  // text-align: left !important;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.titleRightFirst {
+  letter-spacing: 0.03em;
+  text-align: left !important;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.contentIcon {
+  margin-right: 10px;
+}
+
+.buttonDownload {
+  border: 1px solid var(--bx-color-orange);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  padding: 12px 16px;
+}
+.buttonDownloadContainer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--bx-color-orange);
+}
+
+.orangeUnderline {
+  text-decoration-line: underline;
+  color: var(--bx-color-orange);
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.butonContainer {
+  display: flex;
+  margin-top: 6px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.downloadTitle {
+  margin-bottom: 10px;
+}
+
+.requiredField {
+  font-size: 10px;
+  line-height: 12px;
+  color: #212121;
+}
+.sublabel {
+  font-size: 12px;
+  color: var(--bx-color-grey-press);
+}
+
+.inputRowCenter {
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+}
+
+.inputLabel {
+  font-size: 14px;
+  padding-left: 0.5rem;
+}
+.inputLabelLink {
+  color: #41b6e6;
+  text-decoration: underline;
+}
+
+.toopTip {
+  padding: 2px 0.5rem 0px 0.5rem;
+  > div {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.toolTipRow {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+.inputUpload {
+  max-width: 260px;
+  margin: auto;
+}
+
+.modalBody {
+  display: grid;
+  grid-gap: 24px;
+  text-align: center;
+  font-size: 14px;
+  margin: -14px; // el modal por defecto tiene un padding de 40px, esto lo deja en 24px
+  img {
+    width: 72px;
+  }
+  * {
+    margin: auto;
+  }
+}
+
+.infoBox {
+  padding: 20px 24px 32px 24px;
+  box-sizing: border-box;
+}
+
+.infoBox span {
+  font-weight: 400;
+}
+
+.infoBox strong {
+  font-weight: 800;
+}

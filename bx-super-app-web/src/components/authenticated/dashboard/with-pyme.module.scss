@@ -1,0 +1,45 @@
+.imageContainer {
+  @media (min-width: 768px) {
+    width: 170px;
+    height: 170px;
+    margin: 25px 0 0 0;
+  }
+  @media (min-width: 1200px) {
+    width: 170px;
+    height: 170px;
+    margin: 25px 0 0 0;
+  }
+}
+
+.imgSend {
+  width: 77px;
+  margin: 11px 0 0 25px;
+  @media (min-width: 768px) {
+    width: max-content;
+    margin: 25px 0 0 41px;
+  }
+  @media (min-width: 1200px) {
+    width: max-content;
+    margin: 25px 0 0 41px;
+  }
+}
+
+.sendText {
+  margin: 17px 0 20px 0px;
+  @media (min-width: 768px) {
+    margin: 0 0 15px 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.mobileHelper {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}

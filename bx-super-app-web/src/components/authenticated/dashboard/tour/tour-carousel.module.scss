@@ -1,0 +1,140 @@
+.wrapper {
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.track {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+.carouselItem {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  display: block;
+  height: 100%;
+}
+
+.carouselTrack {
+  width: calc(100% * 4);
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto 0 auto;
+  transition: transform 500ms ease 0s;
+}
+
+.dot {
+  border: none;
+  background: var(--bx-color-lblue-thin);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: background 500ms ease 0s;
+  margin: 5px;
+  outline: none;
+}
+
+.dotIsActive {
+  background: var(--bx-color-lorange);
+}
+
+.button {
+  border: none;
+  background: transparent;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.iconContainerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  color: var(--bx-color-lblue);
+}
+
+.iconContainerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  color: var(--bx-color-lblue);
+}
+
+.textContainer {
+  color: var(--bx-color-lblue);
+  font-size: 12px;
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 158%;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    justify-content: space-evenly;
+  }
+}
+
+.hide {
+  color: white;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+  }
+}
+
+.buttonSteps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.fakeRight {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex: 2;
+  }
+}

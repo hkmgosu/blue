@@ -1,0 +1,19 @@
+.Container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Content {
+  width: 100vw;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.overflow {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

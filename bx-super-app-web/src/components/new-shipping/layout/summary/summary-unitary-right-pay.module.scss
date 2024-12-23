@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  width: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  border-radius: 20px;
+  background: var(--bx-color-orange);
+  transition: background 0.2s ease;
+  outline: none !important;
+}
+.button:hover {
+  background: var(--bx-color-orange-full);
+}
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+.text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}

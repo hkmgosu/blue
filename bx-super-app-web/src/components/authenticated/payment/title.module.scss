@@ -1,0 +1,45 @@
+.titleImg {
+  width: 209px;
+  height: 242px;
+  display: flex;
+  margin: auto;
+}
+.img {
+  width: 105px;
+  height: auto;
+}
+.section {
+  position: relative;
+  margin-top: 70px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: 900;
+}
+.subTitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.infoContainer {
+  background: var(--bx-color-lblue-day);
+  padding: 32px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+.infoContainerText {
+  font-size: 16px;
+  text-align: center;
+  p:last-of-type {
+    margin: 0;
+  }
+}

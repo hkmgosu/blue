@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.meassures {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0;
+}
+.meassure {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
+.maxWeight {
+  margin-top: 25px;
+  font-size: 10px;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+  }
+}

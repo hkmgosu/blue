@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.dots {
+  display: flex;
+  width: 80%;
+}
+.boxDot {
+  display: flex;
+  flex: 1;
+  font-size: 12px;
+  align-items: center;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.dotIsActive {
+  background-color: var(--bx-color-lblue-snow);
+}
+.dotIsBad {
+  background-color: var(--bx-color-red-alert);
+}

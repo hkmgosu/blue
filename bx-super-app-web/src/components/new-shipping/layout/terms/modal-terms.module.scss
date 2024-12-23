@@ -1,0 +1,9 @@
+.h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}

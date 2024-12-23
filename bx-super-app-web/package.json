@@ -1,0 +1,176 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bx-design/react-grid": "0.2.5",
+    "@bx-design/react-icons": "0.3.4",
+    "@bx-design/validate-rut": "0.1.1",
+    "@bxreact/button": "^2.3.1",
+    "@bxreact/card": "^2.4.0",
+    "@bxreact/date-picker": "^2.1.0",
+    "@bxreact/field-select": "^2.0.0",
+    "@bxreact/field-switch": "^2.0.0",
+    "@bxreact/field-text": "^2.0.0",
+    "@bxreact/icon": "^1.6.0",
+    "@bxreact/input": "^2.10.0",
+    "@bxreact/modal": "^1.4.2",
+    "@bxreact/pagination": "^2.0.0",
+    "@bxreact/theme": "^2.6.0",
+    "@bxreact/use-pages": "^1.3.0",
+    "@datadog/browser-rum": "4.19.0",
+    "@fortawesome/free-brands-svg-icons": "5.15.2",
+    "@fortawesome/react-fontawesome": "0.1.14",
+    "@headlessui/react": "1.4.3",
+    "@mdx-js/mdx": "1.6.22",
+    "@mdx-js/react": "1.6.22",
+    "@react-google-maps/api": "2.1.1",
+    "@testing-library/jest-dom": "5.16.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "@types/crypto-js": "4.0.1",
+    "@types/jest": "27.4.0",
+    "@types/match-sorter": "6.0.0",
+    "@types/node": "17.0.12",
+    "@types/react": "17.0.38",
+    "@types/react-dom": "17.0.11",
+    "@types/react-gtm-module": "2.0.1",
+    "@types/react-input-autosize": "2.2.0",
+    "@types/react-responsive": "8.0.2",
+    "@types/react-scroll": "1.8.2",
+    "@types/react-transition-group": "4.4.4",
+    "apexcharts": "3.29.0",
+    "axios": "0.21.1",
+    "classnames": "2.3.1",
+    "clsx": "1.1.1",
+    "crypto-js": "4.1.1",
+    "date-fns": "2.19.0",
+    "env-cmd": "10.1.0",
+    "formik": "2.2.6",
+    "html-react-parser": "1.2.7",
+    "husky": "4.3.0",
+    "i18next": "19.9.2",
+    "i18next-browser-languagedetector": "6.0.1",
+    "i18next-http-backend": "1.1.1",
+    "jotai": "1.2.2",
+    "js2excel": "1.0.1",
+    "lint-staged": "12.3.1",
+    "lodash": "4.17.21",
+    "luxon": "2.3.0",
+    "markdown-to-jsx": "^7.1.6",
+    "nanoid": "3.2.0",
+    "optics-ts": "2.3.0",
+    "react": "17.0.2",
+    "react-apexcharts": "1.3.9",
+    "react-dom": "17.0.2",
+    "react-gtm-module": "2.0.11",
+    "react-helmet-async": "1.0.9",
+    "react-i18next": "11.8.10",
+    "react-icons": "4.3.1",
+    "react-input-autosize": "3.0.0",
+    "react-nice-dates": "3.1.0",
+    "react-places-autocomplete": "7.3.0",
+    "react-query": "3.17.0",
+    "react-responsive": "8.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "5.0.0",
+    "react-table": "7.7.0",
+    "react-toastify": "7.0.3",
+    "react-tooltip": "4.2.21",
+    "react-transition-group": "4.4.2",
+    "sass": "^1.49.7",
+    "socket.io-client": "^4.6.1",
+    "styled-components": "5.2.1",
+    "swiper": "^8.4.4",
+    "typescript": "4.5.5",
+    "web-vitals": "2.1.0",
+    "yup": "0.32.9",
+    "zebra-browser-print-wrapper": "0.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "env-cmd -f .env.develop react-scripts build",
+    "build:main": "env-cmd -f .env.main react-scripts build",
+    "build:develop": "env-cmd -f .env.develop react-scripts build",
+    "build:qa": "env-cmd -f .env.qa react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext js,jsx,ts,tsx --max-warnings=0",
+    "lint:fix": "eslint src --ext js,jsx,ts,tsx --fix --max-warnings=0",
+    "format": "prettier --check src",
+    "format:fix": "prettier --write src",
+    "postinstall": "node ./scripts/jsx-runtime.js"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix --max-warnings=0",
+      "prettier --write"
+    ],
+    "src/**/*.{json,css,scss,md}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "no-console": "warn",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": false
+        }
+      ],
+      "@typescript-eslint/explicit-function-return-type": [
+        "warn",
+        {
+          "allowExpressions": true
+        }
+      ],
+      "sonarjs/cognitive-complexity": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@bxreact/table": "^2.0.0",
+    "@bxreact/table-wrapper": "^2.0.0",
+    "@mdx-js/loader": "1.6.22",
+    "@types/luxon": "2.0.9",
+    "@types/mdx-js__react": "1.5.5",
+    "@types/react-credit-cards": "0.8.0",
+    "@types/react-csv": "1.1.1",
+    "@types/react-datepicker": "3.1.7",
+    "@types/react-places-autocomplete": "7.2.6",
+    "@types/react-router-dom": "5.1.7",
+    "@types/react-table": "7.7.9",
+    "@types/styled-components": "5.1.9",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "8.2.3",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "tailwindcss": "^3.0.17"
+  }
+}

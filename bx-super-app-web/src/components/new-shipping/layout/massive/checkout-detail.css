@@ -1,0 +1,41 @@
+.bx-checkout-details {
+  --gap: 1rem;
+  gap: var(--gap);
+  display: grid;
+}
+
+.bx-checkout-detail {
+  display: grid;
+  gap: var(--gap);
+}
+
+.bx-checkout-detail_items {
+  display: grid;
+  gap: calc(var(--gap) / 2);
+}
+
+.bx-checkout-detail:not(:last-child) {
+  border-bottom: 1px solid var(--bx-color-blue-clear);
+  padding-bottom: var(--gap);
+}
+
+.bx-checkout-detail_row {
+  --columns: auto 1fr;
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: var(--columns);
+  gap: var(--gap);
+}
+
+.bx-checkout-detail_row.bx-checkout-detail_row--with-icon {
+  --columns: 15px auto 1fr;
+}
+
+.bx-checkout-detail_description--align-right {
+  text-align: right;
+}
+
+.bx-checkout-detail_header {
+  display: flex;
+  justify-content: space-between;
+}

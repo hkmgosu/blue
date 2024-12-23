@@ -1,0 +1,46 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  background: var(--bx-bg-register);
+  padding: 15px 40px;
+}
+.h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.buttonup {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  color: #2bb9ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.space {
+  height: 70px;
+  width: 100%;
+}
+
+.aditionalQuestion {
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    font-family: var(--bx-font-primary);
+  }
+  .text {
+    .link {
+      margin-left: 5px;
+      cursor: pointer;
+      color: #2bb9ff;
+      font-weight: bold;
+    }
+  }
+}

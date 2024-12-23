@@ -1,0 +1,22 @@
+.bx-accordion {
+  --icon-rotate: 0deg;
+}
+.bx-accordion--show {
+  --icon-rotate: -180deg;
+}
+
+.bx-accordion_header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.bx-accordion_header_icon {
+  transition: 0.35s ease all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(var(--icon-rotate));
+}

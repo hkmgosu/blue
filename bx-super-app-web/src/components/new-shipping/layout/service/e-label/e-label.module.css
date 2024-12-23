@@ -1,0 +1,87 @@
+.card {
+  display: grid;
+  gap: var(--space);
+  --space: var(--bx-space-lg);
+  margin: var(--space) 0;
+  font-size: var(--bx-font-size-text-2);
+  --bx-font-bold: 800;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fields {
+  display: flex;
+  gap: var(--space);
+}
+
+.list {
+  color: var(--bx-color-blue);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list :global .bx-button {
+  text-decoration: underline;
+}
+
+.error {
+  color: var(--bx-color-red-alert);
+}
+
+/**MODAL**/
+
+.modalCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  --space: var(--bx-space-lg);
+  gap: var(--space);
+}
+
+.modalHeader {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalCard :global .bx-button:not(.bx-button--badge) {
+  min-width: 200px;
+}
+
+.modalImg {
+  margin-top: -10px;
+}
+
+.modalCard :global p {
+  margin: 0px;
+}
+
+/**Summary**/
+
+.summary {
+  display: grid;
+  gap: var(--bx-space-sm);
+  --bx-font-bold: 800;
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.summaryFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--bx-space-lg);
+  padding-bottom: var(--bx-space-lg);
+}

@@ -1,0 +1,32 @@
+.title {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonsContainerAlone {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+.img {
+  max-width: 100%;
+  max-height: 400px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-height: auto;
+  }
+}
+
+.centered {
+  text-align: center;
+}

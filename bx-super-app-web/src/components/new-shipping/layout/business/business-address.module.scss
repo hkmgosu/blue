@@ -1,0 +1,47 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--bx-color-black);
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+}
+.text {
+  font-size: 1rem;
+  color: var(--bx-color-black);
+  margin-bottom: 16px;
+}
+.required {
+  font-size: 10px;
+  margin: 0;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+
+.boxHeight {
+  height: max-content;
+}
+
+.collapseButton {
+  position: absolute;
+  right: 10px;
+  transition: all ease 0.4s;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.collapseButtonOn {
+  transform: rotate(180deg);
+}
+
+.mapSubtext {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #212121;
+}

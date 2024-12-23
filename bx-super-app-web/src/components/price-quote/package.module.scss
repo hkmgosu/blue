@@ -1,0 +1,79 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--bx-color-black);
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+}
+.choose {
+  font-size: 18px;
+  color: var(--bx-color-grey-one);
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+.required {
+  font-size: 10px;
+  margin: 0;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+.imageBox {
+  width: 340px;
+  height: 199px;
+  margin: auto;
+}
+.img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--bx-color-black);
+}
+
+.info {
+  margin: 16px 0;
+  font-size: 10px;
+  line-height: 12px;
+}
+.containerSender {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collapse {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.toggle {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  transition: all ease 0.4s;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.toggleRotate {
+  transform: rotate(180deg);
+}

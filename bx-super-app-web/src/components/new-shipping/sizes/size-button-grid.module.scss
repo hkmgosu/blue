@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: shrink;
+  flex-wrap: wrap;
+  @media (max-width: 1200px) {
+    justify-content: space-evenly;
+  }
+}
+.wrapper_multi {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-shrink: shrink;
+  flex-wrap: wrap;
+}

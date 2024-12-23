@@ -1,0 +1,18 @@
+.link {
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  align-items: center;
+  color: var(--bx-color-orange);
+  cursor: pointer;
+  display: flex;
+}
+
+.iconContainer {
+  transform: rotate(90deg);
+  margin-right: 7px;
+}
+
+.exitText {
+  font-size: 14px;
+}

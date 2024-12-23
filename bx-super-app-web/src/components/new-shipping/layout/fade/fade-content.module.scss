@@ -1,0 +1,10 @@
+.content {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.2s ease, display 0.2s ease;
+}
+.contentIsOpen {
+  opacity: 1;
+  display: flex;
+  width: 100%;
+}

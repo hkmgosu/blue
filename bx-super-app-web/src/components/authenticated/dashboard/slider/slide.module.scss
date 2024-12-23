@@ -1,0 +1,46 @@
+.slide {
+  display: grid;
+  align-items: center;
+  background: #00aeff;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr auto;
+  color: var(--bx-color-white);
+  min-height: 100%;
+  gap: 2rem;
+}
+
+.slideContent {
+  display: grid;
+  gap: 1em;
+}
+
+.slide :global strong {
+  color: var(--bx-color-blue);
+}
+
+.slideTitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.slideText {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.slideImage {
+  height: 190px;
+  margin: auto;
+}
+
+@media (max-width: 520px) {
+  .slide {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+}

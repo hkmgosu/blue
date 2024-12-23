@@ -1,0 +1,51 @@
+.container {
+  padding: 40px 160px;
+}
+.grid {
+  margin-bottom: 24px;
+}
+.child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  text-align: right;
+  padding: 16px;
+  cursor: pointer;
+}
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+  font-family: var(--bx-font-primary);
+}
+.text {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: var(--bx-font-primary);
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 650;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  font-family: var(--bx-font-primary);
+}
+.center {
+  text-align: center;
+}
+
+.one {
+  padding: 8px;
+}
+.right {
+  text-align: right;
+}

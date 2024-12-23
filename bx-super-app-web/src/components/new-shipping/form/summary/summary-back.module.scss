@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    justify-content: center;
+    margin-top: 5%;
+  }
+}
+.link {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+  justify-content: center;
+}
+.boxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}

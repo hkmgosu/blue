@@ -1,0 +1,27 @@
+.title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bolder;
+}
+.subtitle {
+  font-family: Mont;
+  font-size: 18px;
+  line-height: 21px;
+}
+.container {
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+.buttonContainer {
+  margin-top: auto;
+}
+
+.currentAccountBodyContainer {
+  background-color: var(--bx-color-white);
+  border-radius: 0.938rem;
+}

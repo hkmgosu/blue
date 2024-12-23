@@ -1,0 +1,187 @@
+{
+  "errors": {
+    "unknown_error": "Unknown Error"
+  },
+  "form": {
+    "errors": {
+      "email": {
+        "invalid": "Wrong email",
+        "match": "Emails must match",
+        "required": "Email is required"
+      },
+      "lastname": {
+        "required": "LastName is required"
+      },
+      "name": {
+        "required": "Name is required"
+      },
+      "password": {
+        "match": "Passwords must match",
+        "min": "Password must contain at least 10 characters",
+        "required": "Password is required"
+      },
+      "pyme_rut": {
+        "invalid": "Please insert a valid RUT (123456789-0)"
+      },
+      "restoreCode": {
+        "matches": "",
+        "min": "",
+        "required": ""
+      },
+      "rut": {
+        "invalid": "Wrong format (123456789-0)",
+        "required": "Rut field is required"
+      }
+    }
+  },
+  "login": {
+    "metas": {
+      "description": "Log in with your access data in BlueExpress",
+      "title": "Log in at BlueExpress"
+    },
+    "errors": {
+      "invalid": "Please verify user and password",
+      "unknown": "Ops! something went wrong"
+    },
+    "title": "Login with your account",
+    "tryWithCount": "You have {{count}} more try to access your account",
+    "tryWithCount_plural": "You have {{count}} more tries to access your account",
+    "register": "Sign up",
+    "register_text": "Still not a user?",
+    "create": " and create your account",
+    "locked": {
+      "sorry": "We are sorry :(",
+      "msg": "You've used all your tries to acces your account",
+      "recover": "Recover Password"
+    },
+    "form": {
+      "email": "Email",
+      "password": "Password",
+      "forget": "Forget my password",
+      "login": "Login",
+      "google": "Google",
+      "validations": {
+        "email": {
+          "invalid": "Please enter a valid email",
+          "required": "Email is required"
+        },
+        "password": {
+          "required": "Please enter a password",
+          "length": "Password must be at least 10 characters"
+        }
+      }
+    }
+  },
+  "password-recover": {
+    "confirm": {
+      "back": "Back",
+      "error": "Failed to change password",
+      "error_1": "Try again! Verify that it contains a capital letter, at least one number and is greater than 10 characters.",
+      "error_2": "Both passwords must be the same.",
+      "error_back": "Back to top",
+      "label_1": "Password",
+      "label_2": "Repeat password",
+      "metas": {
+        "description": "Creation of New BlueExpress Password.",
+        "description_error": "Sorry :(, The requested URL is expired.",
+        "title": "New Password Creation | BlueExpress",
+        "title_error": "The requested URL is expired | BlueExpress"
+      },
+      "placeholder": "**********",
+      "submit": "Change Password",
+      "success": "Your password has been updated successfully",
+      "text_1": "You must verify that it contains at least one number or uppercase and that it is greater than 10 characters.",
+      "text_1_error": "The requested URL is expired.",
+      "title": "Create your new password",
+      "title_error": "Sorry :("
+    },
+    "recover": {
+      "back": "Back",
+      "email_error": "Invalid email.",
+      "error": "Username does not exist.",
+      "label": "Enter your email",
+      "metas": {
+        "description": "Recover BlueExpress Password.",
+        "title": "Recover Password | BlueExpress"
+      },
+      "placeholder": "name@email.com",
+      "submit": "Request your password",
+      "success": "success Check your email to reset your password.",
+      "success_back": "Back to top",
+      "text_1": "Do not worry! Just enter the email address you signed up with.",
+      "text_2": "We will send you a message that will allow you to continue with your management.",
+      "title": "Forgot your password or was your account locked?"
+    }
+  },
+  "success_info": {
+    "register": {
+      "confirm_email": "Click the confirmation link to get started."
+    }
+  },
+  "appraisal": {
+    "title": "Cotiza el valor de tu envío",
+    "finish": "Finalizar cotización",
+    "pyme": {
+      "select": "Selecciona tu Empresa"
+    },
+    "origin": {
+      "title": "Dirección de Origen",
+      "region": "Región origen",
+      "commune": "Comuna origen",
+      "select_commune": "Seleccione una comuna",
+      "watch_agencies": "Ver sucursales",
+      "no_agencies": "No hay sucursales"
+    },
+    "destiny": {
+      "title": "Dirección de Destino",
+      "region": "Región destino",
+      "commune": "Comuna destino"
+    },
+    "size": {
+      "title": "Selecciona el tamaño de tu envío",
+      "verify": "Verifica los datos de tu envío",
+      "long": "Largo",
+      "height": "Alto",
+      "width": "Ancho",
+      "weight": "Peso"
+    },
+    "services": {
+      "title": "¿Qué tipo de envío necesitas?",
+      "arrive": "Tu envio llegará",
+      "not_holydays": "*No se incluyen feriado ni festivos"
+    },
+    "price": {
+      "send_value": "Valor de envío"
+    },
+    "resume": {
+      "title": "Resumen de la cotización",
+      "direction": "Dirección",
+      "origin": "Origen",
+      "destiny": "Destino",
+      "send_info": "Información encomienda",
+      "send": "Envío",
+      "max_weight": "Peso máx",
+      "send_value": " Valor de envío",
+      "new_appraisal": "Realizar otra cotización"
+    }
+  },
+  "shipments": {
+    "status": {
+      "in_process": "In Process",
+      "paid": "Paid",
+      "confirmed": "Confirmed"
+    },
+    "payment_methods": {
+      "oneclick": "OneClick",
+      "webpay": "Webpay"
+    }
+  },
+  "new_business": {
+    "form": {
+      "errors": {
+        "exist_name": "Ups, this name is already associated with a company.",
+        "exist_rut": "Ups, this rut is already associated with a company."
+      }
+    }
+  }
+}

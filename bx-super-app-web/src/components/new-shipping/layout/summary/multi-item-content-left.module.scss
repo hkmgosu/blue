@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  padding: 16px 34px;
+}
+.content:not(.show) {
+  display: none;
+}
+.contentCollapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+  padding: 16px 34px;
+}

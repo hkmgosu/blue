@@ -1,0 +1,48 @@
+.title {
+  font-family: var(--bx-font-primary);
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--bx-color-orange);
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+.dot {
+  height: 28px;
+  width: 28px;
+  background: var(--bx-color-orange);
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+.dotNumber {
+  width: max-content;
+  margin: 0px auto;
+  padding-top: 3px;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 158%;
+  letter-spacing: 0.03em;
+}
+
+.wellDone {
+  font-size: 15px;
+  line-height: 109.9%;
+  text-align: center;
+  color: #212121;
+  font-weight: 800;
+}
+
+.image {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

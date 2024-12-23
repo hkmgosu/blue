@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 16px 20px;
+  @media (min-width: 1200px) {
+    padding: 28px 40px;
+  }
+}
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background: var(--bx-color-grey-mistery);
+  margin-bottom: 16px;
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+}
+.contentBoxInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.infoText {
+  font-size: 12px;
+}
+.infoPrice {
+  font-size: 12px;
+}
+.infoTextBold {
+  font-weight: 700;
+  font-size: 15px;
+}
+.infoPriceBold {
+  font-weight: 700;
+  font-size: 15px;
+}

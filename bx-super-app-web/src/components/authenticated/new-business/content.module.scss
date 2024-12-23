@@ -1,0 +1,198 @@
+@import '../../../styles/mixins.scss';
+
+.cardTitle {
+  font-family: var(--bx-font-primary);
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--bx-color-black);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+.title {
+  font-family: var(--bx-font-primary);
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bolder;
+  @include media(xs) {
+    margin-top: 16px;
+  }
+}
+
+.inputContainer {
+  min-height: 101px;
+}
+
+.warning {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--bx-color-blue-clear);
+  max-height: 44px;
+  border-radius: 4px;
+
+  .warningText {
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #212121;
+    width: 174px;
+  }
+
+  .close {
+    cursor: pointer;
+  }
+}
+
+.imgContainer {
+  .img {
+    width: 100%;
+    height: 182px;
+  }
+}
+
+.required2 {
+  font-size: 10px;
+  line-height: 12px;
+  color: #212121;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 16px 0;
+  height: 40px;
+
+  .dot1 {
+    font-family: var(--bx-font-primary);
+    font-weight: 600;
+    height: 28px;
+    width: 28px;
+    background-color: var(--bx-color-lblue);
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(xs) {
+      font-size: 10px;
+      width: 44px;
+    }
+  }
+  .dot2 {
+    font-family: var(--bx-font-primary);
+    font-weight: 600;
+    height: 28px;
+    width: 28px;
+    background-color: var(--bx-color-lblue);
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(xs) {
+      font-size: 10px;
+      width: 57px;
+    }
+  }
+  .dot3 {
+    font-family: var(--bx-font-primary);
+    font-weight: 600;
+    height: 28px;
+    width: 28px;
+    background-color: var(--bx-color-lblue);
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(xs) {
+      font-size: 10px;
+      width: 30px;
+    }
+  }
+  .title {
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: left;
+    .orange {
+      color: #ff7e44;
+    }
+  }
+}
+
+.selectContainer {
+  width: 100%;
+}
+
+.errorText {
+  font-weight: 800;
+  font-size: 12px;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.required {
+  color: var(--bx-color-orange);
+  font-size: inherit;
+}
+.link {
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  left: 3%;
+
+  @include media(xs) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.iconContainer {
+  transform: rotate(90deg);
+  margin-right: 7px;
+}
+
+.exitText {
+  font-size: 14px;
+  color: var(--bx-color-orange);
+}
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include media(xs) {
+    flex-direction: column;
+  }
+}
+
+.submit {
+  @include media(xs) {
+    margin: 16px 0 16px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

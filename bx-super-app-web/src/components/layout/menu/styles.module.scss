@@ -1,0 +1,87 @@
+@import '../../../styles/mixins.scss';
+.Li {
+  display: block;
+  padding-bottom: 24px;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0px;
+  padding-left: 8px;
+  height: max-content;
+  @media (min-width: 768px) {
+    padding-left: 42px;
+  }
+}
+.LinkTerm {
+  display: block;
+  text-decoration: none;
+  color: var(--bx-color-orange);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+.MenuList {
+  text-align: left;
+  list-style: none;
+  padding-left: 37px;
+  width: 225px;
+  &li {
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    width: 94px;
+  }
+}
+
+.MenuListIsActive {
+  padding-left: 25px;
+  @media (min-width: 768px) {
+    width: 260px;
+  }
+}
+.MenuContainer {
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  padding-top: 60px;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.MenuLink {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--bx-color-black);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-block;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.MenuLinkIsActive {
+  display: inline-block;
+}
+
+.footerContent {
+  text-align: center;
+  width: 100%;
+  display: flex;
+
+  @include media(xs) {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+.title {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.line {
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 16px;
+  border-color: var(--bx-color-orange-fly);
+}
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+}

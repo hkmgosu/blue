@@ -1,0 +1,220 @@
+{
+  "errors": {
+    "unknown_error": "Error desconocido"
+  },
+  "form": {
+    "errors": {
+      "email": {
+        "invalid": "Por favor ingrese un correo válido.",
+        "match": "Los correos deben coincidir",
+        "required": "El correo es obligatorio"
+      },
+      "lastname": {
+        "required": "Debe ingresar apellido"
+      },
+      "name": {
+        "required": "Debe ingresar nombre"
+      },
+      "password": {
+        "match": "Las contraseñas deben coincidir",
+        "min": "La contraseña debe contener al menos 8 caracteres",
+        "required": "La contraseña es obligatoria"
+      },
+      "pyme_rut": {
+        "invalid": "Por favor ingrese un RUT válido (123456789-0)"
+      },
+      "restoreCode": {
+        "matches": "El código solo debe contener números.",
+        "min": "El código debe ser de 6 dígitos.",
+        "required": "Por favor, ingrese el código."
+      },
+      "rut": {
+        "invalid": "Formato incorrecto (123456789-0)",
+        "required": "El rut es obligatorio"
+      }
+    }
+  },
+  "login": {
+    "metas": {
+      "description": "Iniciar sesión con tus datos de acceso en BlueExpress",
+      "title": "Iniciar sesión en BlueExpress"
+    },
+    "errors": {
+      "invalid": "Parece que aún no tienes cuenta. Regístrate para que puedas gestionar tus envíos.",
+      "not_confirmed": "Parece que todavía no has confirmado tu cuenta. Por favor, revisa tu correo electrónico.",
+      "bad_password": "¡Contraseña incorrecta! Vuelve a intentarlo o recupera tu contraseña.",
+      "unknown": "Ops! Ha ocurrido un error",
+      "locked": "Tu cuenta ha sido bloqueada por 3 intentos fallidos, deberás solicitar un cambio de contraseña."
+    },
+    "logout": "Cerrar sesión",
+    "title": "Inicia sesión con tu cuenta",
+    "tryWithCount": "Tienes {{count}} intento más para acceder a tu cuenta",
+    "tryWithCount_plural": "Tienes {{count}} intentos más para acceder a tu cuenta",
+    "register": "Regístrate",
+    "register_text": "¿Todavía no eres usuario?",
+    "create": " y crea tu cuenta",
+    "locked": {
+      "sorry": "Lo sentimos :(",
+      "msg": "Haz usado todos tus intentos para ingresar y tu password se ha bloqueado.",
+      "recover": "Recupera tu contraseña"
+    },
+    "form": {
+      "email": "Email",
+      "password": "Password",
+      "forget": "Olvidé mi contraseña",
+      "login": "Iniciar sesión",
+      "google": "Google",
+      "validations": {
+        "email": {
+          "invalid": "Ingrese un correo válido",
+          "required": "El correo es obligatorio"
+        },
+        "password": {
+          "required": "Ingrese una contraseña",
+          "length": "La contraseña debe contener a lo menos 8 caracteres",
+          "regex": "La contraseña no coincide."
+        }
+      }
+    }
+  },
+  "password-reset": {
+    "form": {
+      "errors": {
+        "email": "Correo no válido."
+      }
+    }
+  },
+  "password-recover": {
+    "confirm": {
+      "back": "Volver",
+      "error": "Error al cambiar la contraseña",
+      "error_1": "¡Vuelve intentarlo! Verifica que contenga una mayúscula, al menos un número y sea mayor a 8 caracteres.",
+      "error_2": "Ambas contraseñas deben ser iguales.",
+      "error_back": "Volver al inicio",
+      "label_1": "Contraseña",
+      "label_2": "Repetir contraseña",
+      "metas": {
+        "description": "Lo sentimos :(,  La URL solicitada está caducada.",
+        "description_error": "Creación de Nueva Contraseña BlueExpress.",
+        "title": "Creación de Nueva Contraseña | BlueExpress",
+        "title_error": "La URL solicitada está caducada | BlueExpress"
+      },
+      "placeholder": "**********",
+      "submit": "Cambiar Contraseña",
+      "success": "Tu contraseña ha sido actualizada satisfactoriamente",
+      "text_1": "Debes verificar que contenga al menos un número o mayúscula y que sea mayor de 8 caracteres.",
+      "text_1_error": "La URL solicitada está caducada.",
+      "title": "Crea tu nueva contraseña",
+      "title_error": "Lo sentimos :("
+    },
+    "recover": {
+      "back": "Volver",
+      "email_error": "Correo no válido.",
+      "error": "El usuario no existe.",
+      "label": "Ingresa tu correo",
+      "metas": {
+        "description": "Recuperar Contraseña de BlueExpress.",
+        "title": "Recuperar Contraseña | BlueExpress"
+      },
+      "placeholder": "nombre@email.com",
+      "submit": "Solicitar tu contraseña",
+      "success": "Olvidé mi contraseña",
+      "success_text": "El mensaje ha sido enviado con exito al correo:",
+      "success_back": "Volver al inicio",
+      "text_1": "¡No te preocupes! Sólo ingresa la dirección de correo electrónico con la que te has registrado y te llegará un correo donde te indicaremos los pasos a seguir.",
+      "title": "Olvidé mi contraseña"
+    }
+  },
+  "success_info": {
+    "register": {
+      "confirm_email": "Haz clic en el link de confirmación para comenzar."
+    }
+  },
+  "appraisal": {
+    "title": "Cotiza el valor de tu envío",
+    "finish": "Cotizar",
+    "pyme": {
+      "select": "¿Quién envía?"
+    },
+    "origin": {
+      "title": "Dirección de Origen",
+      "region": "Región origen",
+      "commune": "Comuna origen",
+      "select_region": "Seleccione una región",
+      "select_commune": "Seleccione una comuna",
+      "watch_agencies": "Ver sucursales",
+      "no_agencies": "No hay sucursales"
+    },
+    "destiny": {
+      "title": "Dirección de Destino",
+      "region": "Región destino",
+      "commune": "Comuna destino",
+      "select_commune": "Seleccione una comuna"
+    },
+    "size": {
+      "title": "Selecciona el tamaño de tu envío",
+      "verify": "Verifica los datos de tu envío",
+      "long": "Largo",
+      "height": "Alto",
+      "width": "Ancho",
+      "weight": "Peso"
+    },
+    "services": {
+      "title": "¿Qué tipo de envío necesitas?",
+      "arrive": "Envío sujeto al horario de entrega de la encomienda en el",
+      "pickup_point": "Punto Blue Express.",
+      "not_holydays": "*Si entregas después de las 16.00 horas, tu encomienda será enviada durante las siguientes 48hrs."
+    },
+    "price": {
+      "send_value": "Valor de envío"
+    },
+    "resume": {
+      "title": "Resumen de la cotización",
+      "direction": "Dirección",
+      "origin": "Origen",
+      "destiny": "Destino",
+      "send_info": "Información encomienda",
+      "send": "Envío",
+      "max_weight": "Peso máx",
+      "send_value": " Valor de envío",
+      "new_appraisal": "Realizar otra cotización"
+    }
+  },
+  "shipments": {
+    "status": {
+      "in_process": "En Proceso",
+      "paid": "Pagado",
+      "confirmed": "Confirmado"
+    },
+    "payment_methods": {
+      "oneclick": "OneClick",
+      "webpay": "Webpay"
+    }
+  },
+  "register": {
+    "form": {
+      "errors": {
+        "multi": "Verifica que esté todo correcto.",
+        "confirm_email": "El correo no coincide.",
+        "password": "Verifica que esté todo correcto. La contraseña debe contener al menos una mayúscula, un número y ser mayor a 8 caracteres.",
+        "password_type": "La contraseña debe contener al menos una mayúscula, un número y ser mayor a 8 caracteres.",
+        "confirm_password": "La contraseña no coincide."
+      }
+    }
+  },
+  "new_business": {
+    "form": {
+      "errors": {
+        "exist_name": "Ups, este nombre ya se encuentra asociado a una empresa.",
+        "exist_rut": "Ups, este rut ya se encuentra asociado a una empresa.",
+        "error": "Oh no! algo salió mal, vuelve a intentarlo",
+        "social_reason": "Verifica que esté todo correcto",
+        "rut": "Por favor ingresa un RUT válido"
+      },
+      "inputs": {
+        "social_reason": "Nombre Empresa",
+        "social_reason_placeholder": "Nombre Comercial"
+      }
+    }
+  }
+}

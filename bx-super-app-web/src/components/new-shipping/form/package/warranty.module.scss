@@ -1,0 +1,67 @@
+.label {
+  @apply flex justify-start items-center text-[13px];
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+}
+.title {
+  @apply text-center;
+  text-align: center;
+}
+.icon {
+  @apply relative flex justify-center items-center ml-[10px];
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.boxBlue {
+  margin-top: 10px;
+  padding-left: 28px;
+  margin-bottom: 34px;
+}
+
+.orangeWarrantyUnderline {
+  @apply font-bold text-bx-orange underline text-xs cursor-pointer mb-0 pl-2;
+  font-weight: bold;
+  color: var(--bx-color-orange);
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-left: 8px;
+}
+
+.warrantyModal {
+  @apply flex justify-end items-center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.warrantyModalCloseIcon {
+  @apply w-[35px] h-[35px] flex justify-center items-center cursor-pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container {
+  @apply flex text-sm xl:text-lg flex-col;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+.sublabel {
+  @apply text-xs text-bx-grey-press;
+  font-size: 12px;
+  color: var(--bx-color-grey-press);
+}

@@ -1,0 +1,14 @@
+.link {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+}
+.boxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}

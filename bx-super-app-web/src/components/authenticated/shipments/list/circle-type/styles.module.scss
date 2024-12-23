@@ -1,0 +1,71 @@
+.wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.circlePreparation {
+  border: 3px solid var(--bx-color-lblue);
+  background: white;
+  transition: all ease 0.4s;
+}
+.circlePreparation:hover,
+.circlePreparation.active {
+  background: var(--bx-color-lblue);
+  color: white;
+}
+.circleRetired {
+  border: 3px solid var(--bx-color-lorange-fruit);
+  background: white;
+  transition: all ease 0.4s;
+}
+.circleRetired:hover,
+.circleRetired.active {
+  background: var(--bx-color-lorange-fruit);
+  color: white;
+}
+.circleTransit {
+  border: 3px solid var(--bx-color-blue);
+  background: white;
+  transition: all ease 0.4s;
+}
+.circleTransit:hover,
+.circleTransit.active {
+  background: var(--bx-color-blue);
+  color: white;
+}
+.circleDelivered {
+  border: 3px solid var(--bx-color-green-future);
+  background: white;
+  transition: all ease 0.4s;
+}
+.circleDelivered:hover,
+.circleDelivered.active {
+  color: white;
+  background: var(--bx-color-green-future);
+}
+.body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyText {
+  font-family: var(--bx-font-primary);
+  font-weight: 900;
+  font-size: 38px;
+}
+.bodyFinal {
+  font-family: var(--bx-font-primary);
+  font-weight: 700;
+  font-size: 12px;
+}

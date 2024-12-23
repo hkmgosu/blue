@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 56px;
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12),
+    0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+  border-radius: 15px;
+}
+
+.tab {
+  cursor: pointer;
+  height: 100%;
+  margin: auto 0;
+  color: var(--bx-color-grey-play);
+}
+
+.active {
+  border-bottom: solid 4px;
+  color: var(--bx-color-blue);
+}
+
+.text {
+  margin: 15px 0 0 0;
+}

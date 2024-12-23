@@ -1,0 +1,54 @@
+.List {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+.ListCarrousel {
+  position: relative;
+  transition: transform 500ms ease 0s;
+}
+.ListItem {
+  width: 170px;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: block;
+  margin-right: 35px;
+}
+.ListItemIsActive {
+  opacity: 1;
+}
+.Dots {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.WrapperDot {
+  background: transparent;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+.Dot {
+  background: var(--bx-color-lblue-thin);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background 800ms ease 0s;
+  display: block;
+}
+.DotIsActive {
+  background: var(--bx-color-orange-miles);
+}

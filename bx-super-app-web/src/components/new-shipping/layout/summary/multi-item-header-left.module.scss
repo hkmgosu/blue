@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  width: 100%;
+  padding: 16px 34px;
+  border-bottom: 1px solid var(--bx-color-blue-clear);
+}
+.headerUnique {
+  border-bottom: none;
+}
+.headerLeft {
+  flex: 1;
+  flex-direction: column;
+}
+.headerRight {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.headerRightItem {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.headerContentIsOpen {
+  border-bottom: 1px solid var(--bx-color-blue-clear);
+}
+.summary {
+  font-size: 16px;
+}

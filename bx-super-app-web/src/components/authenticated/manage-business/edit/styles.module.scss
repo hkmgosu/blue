@@ -1,0 +1,18 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Text {
+  display: none;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline-flex;
+  }
+}
+.BoxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

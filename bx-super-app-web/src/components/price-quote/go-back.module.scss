@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+.link {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+  @include media(xs) {
+    padding: 16px 0;
+  }
+}
+.boxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.linkBackground {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+  background: var(--bx-bg-register);
+  padding-left: 20px;
+}

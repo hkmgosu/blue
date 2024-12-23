@@ -1,0 +1,12 @@
+.wrapper {
+  position: absolute;
+  top: 50px;
+}
+
+.errorText {
+  font-weight: 800;
+  font-size: 12px;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}

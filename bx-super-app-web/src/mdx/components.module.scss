@@ -1,0 +1,25 @@
+.h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+.p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ul {
+  margin-bottom: 30px;
+}

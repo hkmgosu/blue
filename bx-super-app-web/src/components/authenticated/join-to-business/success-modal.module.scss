@@ -1,0 +1,42 @@
+.imageBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 38px;
+  user-select: none;
+}
+
+.image {
+  width: 280px;
+  height: 217px;
+}
+
+.title {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 12px;
+  user-select: none;
+  font-size: 26px;
+  @media (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+
+.subtitle {
+  font-weight: 800;
+  font-family: var(--bx-font-secondary);
+  margin-bottom: 34px;
+  text-align: center;
+  user-select: none;
+  font-size: 22px;
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.buttonBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  user-select: none;
+}

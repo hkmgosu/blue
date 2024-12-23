@@ -1,0 +1,103 @@
+.card :global .card {
+  min-height: 248px;
+
+  @media (max-width: 1023px) {
+    margin-top: 24px;
+  }
+}
+
+.cardHeightTracking {
+  min-height: 207px;
+}
+.containerMember {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.contentIcon {
+  margin: 0 15px 0 0px;
+}
+
+.name {
+  display: grid;
+  gap: 0;
+  line-height: 1;
+  font-size: 16px;
+  margin-right: auto;
+}
+
+.name div {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.bold {
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--bx-font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--bx-color-black);
+  @media (min-width: 768px) {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 25px;
+  }
+  @media (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.imageContainer {
+  width: 116px;
+  height: 113px;
+  background-color: var(--bx-color-blue-clear);
+  border-radius: 15px;
+  margin: 25px auto 0 auto;
+  @media (min-width: 768px) {
+    width: 170px;
+    height: 170px;
+  }
+  @media (min-width: 1200px) {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.calculatorImageContainer {
+  min-width: 64px;
+  max-width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

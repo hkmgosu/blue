@@ -1,0 +1,14 @@
+.backLink {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+  justify-content: center;
+}
+.backBoxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}

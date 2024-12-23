@@ -1,0 +1,71 @@
+.Box {
+  background: #f9f9fa;
+  border: 1px solid var(--bx-color-orange);
+  border-radius: 20px;
+  box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12),
+    0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+  padding: 15px 17px;
+  width: 170px;
+  cursor: pointer;
+  min-height: 142px;
+  transition: border 0.2s linear, background 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.BoxIsActive {
+  background: var(--bx-color-blue-glam);
+  border: 1px solid var(--bx-color-blue-glam);
+}
+.BoxHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.BoxBadge {
+  background: var(--bx-color-blue);
+  border-radius: 4px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bx-color-blue);
+  transition: border 0.2s linear;
+}
+.BoxBadgeIsActive {
+  border: 1px solid #ffffff;
+}
+.BoxBadgeText {
+  color: #ffffff;
+  font-size: 10px;
+}
+.BoxContent {
+  display: flex;
+  flex-direction: column;
+  color: var(--bx-color-grey-one);
+  transition: border 0.2s linear;
+  flex: 1;
+}
+.BoxContentIsActive {
+  color: #ffffff;
+}
+.BoxContentTitle {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+.BoxFooter {
+  display: flex;
+  flex-direction: column;
+}
+.BoxFooterIsActive {
+  color: #ffffff;
+}
+.BoxFooterDate {
+  font-size: 10px;
+}

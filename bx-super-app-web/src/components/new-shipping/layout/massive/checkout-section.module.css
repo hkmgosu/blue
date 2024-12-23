@@ -1,0 +1,56 @@
+.cardContainerLeft {
+}
+
+.cardHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardHeaderIcon {
+  transition: 0.5s ease all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardHeaderIconHide {
+  transform: rotate(-180deg);
+}
+
+.cardHeaderTitle {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.cardContent {
+  padding: 20px;
+  border-top: 1px solid var(--bx-color-blue-clear);
+}
+
+.spaceBottom {
+  margin-bottom: 20px;
+}
+
+.cardDownload {
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+}
+
+.cardDownloadContent {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cardDownloadTitle {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.cardDownloadText {
+  font-size: 14px;
+}

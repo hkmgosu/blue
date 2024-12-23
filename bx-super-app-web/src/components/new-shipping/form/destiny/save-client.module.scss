@@ -1,0 +1,15 @@
+.container {
+  @apply flex;
+  display: flex;
+  flex-direction: row;
+}
+.boxIcon {
+  @apply flex justify-center items-center mr-[6px];
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+.fakeCard {
+  display: flex;
+}

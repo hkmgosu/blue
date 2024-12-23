@@ -1,0 +1,14 @@
+.cardRight {
+  margin: 0px 0px 0px auto;
+  float: right;
+  text-align: center;
+  font-size: 12px;
+}
+
+.cardRightContent {
+  padding: 10px;
+}
+
+.cardRight :global h4 {
+  margin: 0px;
+}

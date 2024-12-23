@@ -1,0 +1,24 @@
+@import '../../../../../styles/mixins.scss';
+
+.imageContainer {
+  width: 200px;
+  height: 130px;
+
+  @include media(xs) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  @media (min-width: 768px) {
+    width: 250px;
+    height: 162px;
+    margin-top: 7px;
+  }
+  @media (min-width: 1200px) {
+    width: 250px;
+    height: 162px;
+    margin-top: 7px;
+  }
+}

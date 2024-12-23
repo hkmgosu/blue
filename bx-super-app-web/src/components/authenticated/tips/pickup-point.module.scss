@@ -1,0 +1,61 @@
+.cardText {
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0.03em;
+}
+.cardTextWithLink {
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0.03em;
+}
+.orangeLink {
+  color: var(--bx-color-orange);
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cardNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 15px;
+  background-color: var(--bx-color-lblue);
+  color: white;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--bx-font-primary);
+}
+.backLink {
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+}
+.backBoxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+}
+.listContainer {
+  margin-left: 15px;
+}
+.pickupImage {
+  width: 224px;
+}
+.margin {
+  margin-left: 22px;
+}

@@ -1,0 +1,6 @@
+.Toastify__toast-container {
+  width: 100vw;
+  @media (min-width: 1200px) {
+    width: auto;
+  }
+}

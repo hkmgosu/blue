@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 1.5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.text {
+  display: none;
+  color: var(--bx-color-lblue-give);
+  @media (min-width: 768px) {
+    display: flex;
+    font-size: 14px;
+  }
+}
+
+.mobileText {
+  font-size: 14px;
+  color: var(--bx-color-lblue-give);
+  text-align: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

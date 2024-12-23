@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 1200px) {
+    justify-content: space-around;
+  }
+  @apply flex justify-between items-center xl:justify-around;
+}
+.wrapperBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @apply flex flex-col items-center justify-center;
+}
+.box {
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  @apply flex rounded-full flex-col mb-4;
+}
+.text {
+  font-size: 14px;
+  text-align: center;
+  @apply text-sm text-center;
+}
+.button {
+  background: var(--bx-color-lblue-easy);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid #fff;
+  transition: border 0.15s ease, border-color 0.15s ease;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  @media (min-width: 1200px) {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:focus {
+    border: 2px solid var(--bx-color-orange);
+    outline: none;
+  }
+  @apply bg-bx-lblue-easy rounded-full flex justify-center items-center border-white border-0 transition-colorsw w-[100px] h-[100px] p-0 focus:border-2 focus:border-bx-orange;
+}
+.buttonIsActive {
+  border: 2px solid var(--bx-color-orange);
+  @apply border-2 border-bx-orange;
+}
+.img {
+  width: 82px;
+  height: 82px;
+  @media (min-width: 1200px) {
+    width: 82px;
+    height: 82px;
+  }
+  object-fit: cover;
+  @apply w-[82px] h-[82px] object-cover;
+}

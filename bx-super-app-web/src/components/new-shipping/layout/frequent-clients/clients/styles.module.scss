@@ -1,0 +1,40 @@
+.List {
+  @apply w-full flex flex-col justify-center max-h-[400px] overflow-y-auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.Item {
+  @apply flex justify-center flex-col pt-3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.ItemBorder {
+  @apply mt-3 h-[1px] bg-bx-blue-clear w-full;
+  margin-top: 12px;
+  height: 1px;
+  background-color: var(--bx-color-blue-clear);
+  width: 100%;
+}
+.ItemContent {
+  @apply w-full flex items-center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.ItemCheck {
+  @apply mr-[10px];
+  margin-right: 10px;
+}
+.Text {
+  @apply text-sm whitespace-nowrap overflow-hidden text-ellipsis;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

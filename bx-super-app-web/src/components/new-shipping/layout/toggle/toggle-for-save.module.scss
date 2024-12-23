@@ -1,0 +1,23 @@
+.toggleForSave {
+  display: flex;
+  flex-direction: column;
+}
+.toggleForSaveContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+.text {
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 700;
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+.small {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+}

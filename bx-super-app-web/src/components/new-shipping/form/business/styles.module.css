@@ -1,0 +1,33 @@
+.required {
+  color: var(--bx-color-orange);
+}
+.searchText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+}
+.agenciesSearchText {
+  font-size: 18px;
+  font-weight: 800;
+}
+.agencies {
+  font-size: 1rem;
+  padding-left: 31px;
+  margin-bottom: 11px;
+}
+.line {
+  width: 100%;
+  display: flex;
+  height: 2px;
+  background: var(--bx-color-orange);
+  margin-bottom: 15px;
+}
+.IconContainer {
+  margin-left: 5px;
+}

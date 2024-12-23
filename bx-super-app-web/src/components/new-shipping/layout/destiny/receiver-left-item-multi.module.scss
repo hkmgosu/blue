@@ -1,0 +1,70 @@
+.grid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 18px 21px;
+  border-bottom: 1px solid var(--bx-color-blue-clear);
+  cursor: pointer;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.selectedGrid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 18px 21px;
+  border-bottom: 1px solid var(--bx-color-blue-clear);
+  background-color: var(--bx-color-lorange-send);
+  cursor: pointer;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+.gridCol1 {
+  width: 33px;
+}
+.idNumber {
+  font-size: 12px;
+  color: var(--bx-color-grey-mistery);
+}
+.gridCol {
+  flex: 1;
+  flex-direction: column;
+}
+.gridCol2 {
+  width: 65px;
+  margin: 0 5px;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1200px) {
+    width: 53px;
+  }
+  @media (min-width: 1400px) {
+    width: 40x;
+  }
+}
+.gridCol3 {
+  width: 65px;
+  margin: 0 5px;
+
+  @media (min-width: 1200px) {
+    width: 18px;
+  }
+  @media (min-width: 1400px) {
+    width: 25px;
+  }
+}
+.gridCol5 {
+  width: 65px;
+  display: flex;
+  @media (min-width: 1200px) {
+    width: 47px;
+  }
+  @media (min-width: 1400px) {
+    width: 50px;
+  }
+}

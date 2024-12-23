@@ -1,0 +1,104 @@
+.contentImage {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 12px;
+  & > img {
+    width: 85px;
+    height: 85px;
+  }
+  @media (min-width: 768px) {
+    width: 75px;
+    height: 75px;
+    margin-right: 32px;
+  }
+}
+
+.contentDatailUser {
+  display: flex;
+  margin-bottom: 40px;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.subtitle {
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 158%;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
+
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.avatarTextSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.editContent {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+}
+
+.text {
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+.textName {
+  font-family: var(--bx-font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.textButton {
+  display: flex;
+  border: none;
+  background: none;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  color: var(--bx-color-lblue);
+  &:hover {
+    color: var(--bx-color-blue-place);
+  }
+  &:focus {
+    outline: none;
+  }
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+  }
+}

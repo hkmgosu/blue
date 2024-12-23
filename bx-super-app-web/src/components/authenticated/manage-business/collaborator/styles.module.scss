@@ -1,0 +1,29 @@
+.Wrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+.Avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 10px;
+}
+.AvatarImage {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Name {
+  font-weight: 900;
+  font-size: 14px;
+  font-family: var(--bx-font-primary);
+}
+.Role {
+  font-size: 14px;
+}

@@ -1,0 +1,33 @@
+.Wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.IconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Title {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--bx-font-primary);
+}
+.Description {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.ButtonBox {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}

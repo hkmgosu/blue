@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.subTitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  padding: 0 0px;
+  font-family: var(--bx-font-primary);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.subContent {
+  display: flex;
+  margin-bottom: 12px;
+}
+.subContentFirst {
+  margin-bottom: 12px;
+}
+.boxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 0;
+}
+.text {
+  font-size: 12px;
+  color: var(--bx-color-grey-mistery);
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--bx-color-blue-clear);
+  margin-bottom: 21px;
+}
+.contentValue {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0 0px;
+}
+.contentValueInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.contentValueText {
+  font-size: 12px;
+}
+.contentValueVal {
+  font-size: 12px;
+}
+.contentTotal {
+  display: flex;
+  justify-content: space-between;
+}
+.contentTotalText {
+  font-size: 16px;
+  font-weight: 800;
+}
+.contentTotalValue {
+  font-size: 16px;
+}

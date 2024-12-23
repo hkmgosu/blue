@@ -1,0 +1,77 @@
+@import '../../../styles/mixins.scss';
+
+.backLink {
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--bx-color-lblue);
+  cursor: pointer;
+}
+.backBoxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.cardText {
+  font-size: 16px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.numberContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 30px;
+  background-color: var(--bx-color-lblue);
+  color: white;
+  margin: 0 auto;
+  font-size: 26px;
+  font-family: var(--bx-font-primary);
+  margin-bottom: 28px;
+  font-weight: bold;
+  @include media(xs) {
+    margin-bottom: 0;
+  }
+}
+.textContainer {
+  min-height: 98px;
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--bx-color-black);
+  margin-bottom: 8px;
+
+  @include media(xs) {
+    min-height: auto;
+  }
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.image {
+  height: 88px;
+}
+
+@media (max-width: 449px) {
+  img {
+    display: none;
+  }
+  .numberContainer {
+    // margin-bottom: 100px;
+  }
+}

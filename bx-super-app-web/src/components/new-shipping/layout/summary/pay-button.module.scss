@@ -1,0 +1,37 @@
+.box {
+  padding: 25px 16px;
+  box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12),
+    0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+  background: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 219px;
+  min-height: 67px;
+  max-height: 67px;
+  width: 49%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+.imageMask {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.imageBox {
+  width: 140px;
+  height: 40px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

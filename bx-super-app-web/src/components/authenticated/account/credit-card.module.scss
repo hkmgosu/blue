@@ -1,0 +1,115 @@
+.cardHeaderContent {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textName {
+  font-family: var(--bx-font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+.circleButton {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bx-color-white);
+  border-radius: 50%;
+  position: relative;
+  &:hover {
+    background-color: var(--bx-color-grey-on);
+  }
+}
+
+.creditCardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteCardContent {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.text {
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+.fakeContent {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  width: 214px;
+  background: var(--bx-color-white);
+  padding: 23px;
+  z-index: 10;
+  top: 0;
+  right: 35px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 8px -4px rgb(24, 39, 75, 0.2);
+}
+
+.menuHeader {
+  text-align: center;
+  font-family: var(--bx-font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 109.9%;
+  margin-bottom: 24px;
+}
+
+.iconContent {
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    color: var(--bx-color-blue-place);
+  }
+}
+
+.alerContainer {
+  position: absolute;
+  z-index: 50;
+  top: -260%;
+  @media (min-width: 768px) {
+    top: -260%;
+  }
+  @media (min-width: 1200px) {
+    top: -260%;
+  }
+  @media (min-width: 1400px) {
+    top: -188%;
+  }
+}

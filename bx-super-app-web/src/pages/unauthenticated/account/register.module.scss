@@ -1,0 +1,28 @@
+.main {
+  min-height: calc(
+    100vh - var(--bx-register-header-height) - var(--bx-register-footer-height)
+  );
+  width: 100%;
+  background: var(--bx-bg-register);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  @media (min-width: 768px) {
+    padding: 28px 75px;
+  }
+}
+.title {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+.text {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}

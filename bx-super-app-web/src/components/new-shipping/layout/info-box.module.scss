@@ -1,0 +1,80 @@
+.box {
+  --bgcolor: var(--bx-color-grey-on);
+  --border: 0.6px solid var(--bx-color-blue-clear);
+  --font-family-title: var(--bx-font-primary);
+  --font-size-title: 16px;
+  --font-size-text: 12px;
+  --font-weight-title: 800;
+  --color-title: var(--bx-color-red-alert);
+  --color-subtext: var(--bx-color-orange);
+  --color-text: var(--bx-color-blue);
+}
+
+.box.relevant {
+  --font-size-title: 18px;
+  --font-size-text: 14px;
+  --color-text: var(--bx-color-blue-point);
+  --color-subtext: var(--color-title);
+  --bgcolor: var(--bx-color-lorange-send);
+}
+
+.box.success {
+  --bgcolor: var(--bx-color-green-game);
+  --border: 0.6px solid var(--bx-color-green-future);
+  --color-title: var(--bx-color-green-future);
+}
+
+.box.relevant :global .button:not(:hover) {
+  background: white;
+}
+
+.row,
+.columnLeft,
+.columnRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.row {
+  flex-flow: row nowrap;
+  gap: 2rem;
+  background: var(--bgcolor);
+  border: var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: left;
+  font-size: var(--font-size-text);
+}
+
+.title {
+  color: var(--color-title);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+  font-family: var(--font-family-title);
+}
+
+.subtitle {
+  color: var(--color-subtext);
+}
+
+.text {
+  color: var(--color-text);
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  object-fit: contain;
+}

@@ -1,0 +1,12 @@
+.imageContainer {
+  width: 200px;
+  height: 130px;
+  @media (min-width: 768px) {
+    width: 250px;
+    height: 162px;
+  }
+  @media (min-width: 1200px) {
+    width: 250px;
+    height: 162px;
+  }
+}

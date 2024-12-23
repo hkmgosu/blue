@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: var(--bx-color-lblue);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}

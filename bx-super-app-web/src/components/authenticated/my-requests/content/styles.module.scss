@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: initial;
+  border-radius: 15px;
+  box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12),
+    0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+}
+.cardHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: initial;
+  border-radius: 15px;
+  padding: 0 20px;
+  box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12),
+    0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+}
+.cardBody {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 20px;
+  @media (min-width: 992px) {
+    padding: 40px;
+  }
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.navItem {
+  flex: 1;
+  display: flex;
+}
+.navItemButton {
+  flex: 1;
+  display: flex;
+  padding: 24px 0;
+  justify-content: center;
+  border: none;
+  background: transparent;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+.navItemButtonText {
+  color: var(--bx-color-grey-play);
+}
+.navItemButtonTextIsActive {
+  color: var(--bx-color-blue);
+}
+.navItemButtonBorder {
+  display: none;
+}
+.navItemButtonBorderIsActive {
+  display: block;
+  background: var(--bx-color-blue);
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+  height: 4px;
+}

@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  gap: 20px;
+  position: relative;
+}
+
+.cardContainer {
+  width: 100%;
+  box-shadow: 0px 6px 8px -6px rgb(24 39 75 / 12%),
+    0px 8px 16px -6px rgb(24 39 75 / 8%);
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.header {
+  display: grid;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+
+.cardHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.cardFooter {
+  display: flex;
+  padding: 8px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.table {
+  overflow: auto;
+  --bx-table-row-border-bottom: 1px solid #8b8b8b;
+}
+
+.table :global .bx-table-wrapper_overflow {
+  min-height: 320px;
+}
+
+.table :global .bx-table-td-with-icon svg {
+  margin-left: 0.5rem;
+}
+
+.table :global td:not(:first-child) {
+  border-left: var(--table-row-border-bottom);
+}
+
+.tableCellError {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tableCellError :global svg {
+  width: 14px;
+  height: 14px;
+  color: var(--bx-color-red-alert);
+}
+
+.footer {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal {
+  text-align: center;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+.modal :global img {
+  margin: auto;
+}
+
+.modalRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconLoading {
+  animation: 0.75s linear infinite var(--bx-spinner-anim);
+  transform-origin: 56% 48.5%;
+}

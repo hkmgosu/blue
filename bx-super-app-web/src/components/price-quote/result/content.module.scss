@@ -1,0 +1,221 @@
+.main {
+  min-height: calc(100vh - 64px - 80px);
+  background-color: var(--bx-color-lblue-day);
+  padding: 30px 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media (min-width: 1200px) {
+    padding: 30px 24px;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-size: 26px;
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+}
+.businessName {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.infoTitle {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+}
+.infoText {
+  font-weight: bold;
+  font-size: 18px;
+}
+.originDestiny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.originDestinyText {
+  font-size: 16px;
+}
+.originCommune {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.destinyCommune {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.originDestinyCenter {
+  display: flex;
+  align-items: center;
+}
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.originDestinyLine {
+  width: 67px;
+  border-top: 1px dashed var(--bx-color-blue-fun);
+  @media (min-width: 1200px) {
+    width: 120px;
+  }
+}
+.separatorLine {
+  width: 100%;
+  height: 1px;
+  background: var(--bx-color-blue-clear);
+  margin: 28px 0;
+}
+.detailBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detailBoxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.detailBoxInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.detailSizes {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+.detailSizesDown {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.detailBoxTitle {
+  font-size: 14px;
+  color: var(--bx-color-blue);
+  text-align: center;
+}
+.detailBoxText {
+  text-align: center;
+  color: var(--bx-color-blue);
+  font-weight: 600;
+}
+.dateTitle {
+  font-size: 16px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.dateText {
+  font-size: 10px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.priceBox {
+  display: flex;
+  justify-content: center;
+}
+.price {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: var(--bx-color-blue);
+}
+
+.share {
+  cursor: pointer;
+  margin-top: 30px;
+  color: #ff7e44;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.info {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.space {
+  margin-left: 10px;
+}
+
+.textarea {
+  border: solid 1px #888787;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.input {
+  height: 30px;
+  display: inline-block;
+  display: inline-flex;
+  border: none;
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+.tagItem {
+  background-color: #d6e0ff;
+  font-size: 14px;
+  border-radius: 30px;
+  height: 30px;
+  padding: 0 3px 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.3rem 0.3rem 0;
+  color: #333333;
+}
+
+.tagItem > .button {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonBox {
+  text-align: center;
+}
+
+.error {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 90%;
+  color: #fd2626;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

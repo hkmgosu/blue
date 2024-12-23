@@ -1,0 +1,53 @@
+.TipsMain {
+  padding: 20px;
+  background-color: var(--bx-color-lblue-day);
+  min-height: calc(100vh - 120px);
+}
+.TipsTitle {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.TipsSingleTitle {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+  min-height: 56px;
+  margin-bottom: 16px;
+}
+.TipsBottomSectionTitle {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+  min-height: 56px;
+  margin-bottom: 16px;
+}
+.TipsBottomSectionText {
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  min-height: 88px;
+  margin-bottom: 24px;
+}
+.cardText {
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  min-height: 72px;
+  margin-bottom: 24px;
+}
+.cardBottomText {
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  min-height: 88px;
+  margin-bottom: 24px;
+}
+.TipsSingleIconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}

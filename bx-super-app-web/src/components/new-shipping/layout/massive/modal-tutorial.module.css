@@ -1,0 +1,23 @@
+.modal {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  font-size: 14px;
+  margin: -20px;
+}
+
+.modal :global p {
+  margin: 0px;
+}
+
+.modal :global h3 {
+  font-weight: 800;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

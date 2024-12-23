@@ -1,0 +1,32 @@
+.main {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bx-color-lblue-day);
+  padding: 95px 0;
+  justify-content: center;
+  align-items: center;
+}
+.imageBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.image {
+  width: 244px;
+  height: 212px;
+}
+.title {
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}

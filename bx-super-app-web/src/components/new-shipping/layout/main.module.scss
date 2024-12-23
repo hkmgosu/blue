@@ -1,0 +1,14 @@
+.main {
+  min-height: calc(100vh - 64px - 80px);
+  background-color: var(--bx-color-lblue-day);
+  padding: 30px 12px;
+  @media (min-width: 1200px) {
+    padding: 18px 24px;
+  }
+}
+.title {
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 14px;
+}

@@ -1,0 +1,16 @@
+.BoxImage {
+  display: flex;
+  justify-content: center;
+}
+.Img {
+  width: 72px;
+  height: 72px;
+}
+.Title {
+  font-weight: 800;
+  text-align: center;
+  font-family: var(--bx-font-primary);
+}
+.ErrorMessage {
+  color: #da0000;
+}

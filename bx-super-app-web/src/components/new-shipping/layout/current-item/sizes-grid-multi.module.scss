@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.box {
+  width: 23%;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  color: var(--bx-color-grey-one);
+}

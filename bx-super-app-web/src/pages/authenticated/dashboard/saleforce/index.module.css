@@ -1,0 +1,9 @@
+.iframe {
+  width: 100%;
+}
+
+.main {
+  background: var(--bx-bg-register);
+  display: flex;
+  justify-content: center;
+}

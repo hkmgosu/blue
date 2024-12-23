@@ -1,0 +1,81 @@
+.cardHeight {
+  min-height: 207px;
+  max-height: 227px;
+}
+.appraisalText {
+  font-family: var(--bx-font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: 0.03em;
+  height: 67px;
+  color: var(--bx-color-black);
+  @media (min-width: 768px) {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgCalculator {
+  width: 70%;
+}
+
+.calculatorImageContainer {
+  min-width: 64px;
+  max-width: 64px;
+  height: 64px;
+  background-color: var(--bx-color-blue-clear);
+  border-radius: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.trackingImageContainer {
+  display: none;
+  min-width: 64px;
+  height: 64px;
+  background-color: var(--bx-color-blue-clear);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.title {
+  font-family: var(--bx-font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--bx-color-black);
+  @media (min-width: 768px) {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 25px;
+  }
+  @media (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.mobileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

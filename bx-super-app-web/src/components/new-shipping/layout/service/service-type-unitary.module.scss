@@ -1,0 +1,45 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--bx-color-black);
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+}
+.text {
+  font-size: 1rem;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+.required {
+  font-size: 10px;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+.maxWeight {
+  margin-top: 25px;
+  font-size: 10px;
+  @media (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+.orangeText {
+  color: var(--bx-color-orange);
+}
+
+.collapseButton {
+  position: absolute;
+  right: 10px;
+  transition: all ease 0.4s;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.collapseButtonOn {
+  transform: rotate(180deg);
+}

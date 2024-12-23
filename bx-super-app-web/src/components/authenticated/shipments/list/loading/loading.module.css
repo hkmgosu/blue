@@ -1,0 +1,8 @@
+.host {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}

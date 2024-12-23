@@ -1,0 +1,58 @@
+.contentUploadFile {
+  --upload-input-border: var(
+    --bx-upload-input-border,
+    1px dashed var(--bx-color-primary-blue, #0032a0)
+  );
+  --upload-input-border-radius: var(--bx-upload-input-border-radius, 10px);
+  --upload-input-background: var(
+    --bx-upload-input-background,
+    var(--bx-color-grey-on)
+  );
+  --upload-input-color: var(--bx-upload-input-color, var(--bx-color-blue));
+  --upload-input-font-size: var(--bx-upload-input-font-size, 14px);
+  --upload-input-gap: var(--bx-upload-input-gap, 16px);
+  --upload-input-padding: var(--bx-upload-input-padding, 20px 30px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--upload-input-border);
+  border-radius: var(--upload-input-border-radius);
+  padding: var(--upload-input-padding);
+  font-size: var(--upload-input-font-size);
+  color: var(--upload-input-color);
+  background: var(--upload-input-background);
+  text-align: center;
+  cursor: pointer;
+}
+
+.titleFileInfo {
+  margin-top: var(--upload-input-gap);
+}
+
+.contentProgress {
+  --upload-progress-padding: var(--bx-progress-padding, 14px 10px);
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--upload-progress-padding);
+}
+.progressContainer {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.uploadButtonText {
+  margin-left: 10px;
+}
+
+.uploadIcon {
+  cursor: pointer;
+}

@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    @apply font-heading;
+  }
+
+  html {
+    @apply h-full;
+  }
+
+  body {
+    @apply relative min-w-[320px] min-h-full m-0 h-full;
+  }
+
+  html,
+  body {
+    @apply font-sans bg-white text-bx-fg transition-colors scroll-smooth motion-reduce:transition-none motion-reduce:transform-none;
+    font-size: 16px;
+  }
+
+  ::selection {
+    @apply text-bx-white bg-bx-selection;
+    text-shadow: none;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    @apply mt-0 mb-0 font-semibold font-heading;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-[calc(1.375rem+1.5vw)] xl:text-[2.5rem];
+  }
+
+  h2 {
+    @apply text-[calc(1.325rem+0.9vw)] xl:text-[2rem];
+  }
+
+  h3 {
+    @apply text-[calc(1.3rem+0.6vw)] xl:text-[1.75rem];
+  }
+
+  h4 {
+    @apply text-[calc(1.275rem+0.3vw)] xl:text-[1.5rem];
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-base;
+  }
+
+  p {
+    @apply mt-0 mb-4;
+  }
+
+  ol,
+  ul {
+    @apply pl-8;
+  }
+
+  ol,
+  ul,
+  dl {
+    @apply mb-4;
+  }
+
+  address {
+    @apply mb-4 not-italic;
+    line-height: inherit;
+  }
+
+  dt {
+    @apply font-bold;
+  }
+
+  blockquote {
+    @apply mb-4;
+  }
+
+  abbr[title],
+  abbr[data-bs-original-title] {
+    @apply underline cursor-help;
+    -webkit-text-decoration: underline dotted;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+  }
+
+  dd {
+    @apply mb-2;
+  }
+
+  mark {
+    @apply p-[0.2em] bg-[#fcf8e3];
+  }
+
+  a {
+    @apply text-bx-blue no-underline transition-colors duration-200 hover:text-bx-blue-place;
+  }
+
+  a:not([href]):not([class]),
+  a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  pre {
+    @apply block mt-0 mb-4 overflow-auto text-sm;
+  }
+
+  code {
+    @apply text-sm text-[#d63384];
+    word-wrap: break-word;
+  }
+
+  figure {
+    @apply mb-4;
+  }
+
+  caption {
+    @apply !pt-2 !pb-2 text-bx-secondary text-left;
+  }
+
+  label {
+    @apply inline-block;
+  }
+
+  kbd {
+    @apply py-[0.2rem] px-[0.4rem] text-sm text-white bg-bx-dark rounded;
+  }
+  kbd kbd {
+    @apply p-0 text-base font-bold;
+  }
+
+  [list]::-webkit-calendar-picker-indicator {
+    @apply hidden;
+  }
+
+  ::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+
+  legend {
+    @apply float-left w-full p-0 mb-2 text-[calc(1.275rem+0.3vw)] xl:text-2xl;
+    line-height: inherit;
+  }
+  legend + * {
+    clear: left;
+  }
+
+  ::-webkit-datetime-edit-fields-wrapper,
+  ::-webkit-datetime-edit-text,
+  ::-webkit-datetime-edit-minute,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-year-field {
+    @apply p-0;
+  }
+
+  ::-webkit-inner-spin-button {
+    @apply h-auto;
+  }
+
+  [type='search'] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+  }
+
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-color-swatch-wrapper {
+    @apply p-0;
+  }
+
+  ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+  }
+
+  output {
+    @apply inline-block;
+  }
+
+  iframe {
+    @apply border-0;
+  }
+
+  summary {
+    @apply cursor-pointer;
+  }
+
+  hr {
+    @apply my-4 mx-0 border-0 opacity-25;
+    color: inherit;
+    background-color: currentColor;
+  }
+
+  hr:not([size]) {
+    @apply h-[1px];
+  }
+  .Toastify__toast-container {
+    width: fit-content;
+  }
+  .Toastify__toast {
+    @apply max-w-[500px] flex items-center relative py-4 px-6 mb-4 border rounded-[0.625rem];
+    box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12),
+      0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+  }
+  .Toastify__toast--info {
+    @apply text-bx-light-express bg-bx-light-dream border-bx-light-express;
+  }
+  .Toastify__toast--success {
+    @apply text-bx-green-future bg-bx-green-game border-bx-green-future;
+  }
+  .Toastify__toast--warning {
+    @apply text-bx-yellow-brown bg-bx-yellow-blank border-bx-yellow-brown;
+  }
+  .Toastify__toast--error {
+    @apply text-bx-red-alert bg-bx-red-clean border-bx-red-alert;
+  }
+  /** Classes for the close button. Better use your own closeButton **/
+  .Toastify__close-button {
+    @apply text-black;
+  }
+  /** Classes for the progress bar **/
+  .Toastify__progress-bar {
+    @apply bg-[rgba(0,0,0,0.1)];
+  }
+  .nice-dates-day:before {
+    background-color: var(--bx-color-blue) !important;
+    z-index: 1;
+  }
+}
